@@ -1,0 +1,10 @@
+body{
+    height: 100vh;
+    margin: 0;
+}
+.leftBar{
+    background-color: black;
+    height: 100vh;
+    width: 30px;
+
+}
