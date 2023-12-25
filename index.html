@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html>
-
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,800;1,900&family=Nunito:wght@1000&family=Rubik:wght@800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>My Web Page</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>LingvoContext</title>
 </head>
-
 <body>
-
     <div class="leftBar">
-        <a href="#"><img src="/icons/logo.png" alt=""></a> 
-        <a href="#"><img src="/icons/home.png" alt=""></a>
+        <a href="#"><img src="/icons/logo.png" alt=""></a>
         <a href="#"><img src="/icons/check2.png" alt=""></a>
         <a href="#"><img src="/icons/message.png" alt=""></a>
-        <a href="#"><img src="/icons/icons8.svg" alt=""></a>
         <a href="#"><img src="/icons/analytics.png" alt=""></a>
         <a href="#"><img src="/icons/exit.png" alt=""></a>
     </div>
     <div class="gridWrapper">
         <div class="navbar">
             <div class="leftLinks">
-                <h1>чото тут написано</h1>
+                <h1>LingvoContext</h1>
             </div>
             <div class="rightLinks">
                 <a href="#"><img src="/photo/фоточка.jpg" alt=""></a>
@@ -28,39 +29,132 @@
             </div>
         </div>
         <div class="box1">
-            <div><p>14<br>День</p></div>
-            <div><p> max streak 16<br> для досягнення нової цілі залишилось 2 дні</p></div>
+            <div>
+                <p>14<br>Days</p>
+            </div>
+            <div>
+                <p> max streak 16<br>2 days left to reach the new goal</p>
+            </div>
             <div><a href="#"><img src="/icons/free-icon-star-5583319.png" alt="achievements"></a></div>
-
-
-
         </div>
-
         <div class="box2">
-            <div><p>12122</p></div>
-            <div></div>
+            <div>
+                <p>⌛Summary</p>
+            </div>
+            <div class="top">
+                <img src="/photo/phone.english.png" alt="">
+                <p>Learn words on a certain topic</p>
+                <a href="#">See Details</a>
+            </div>
+            <div class="sheduleBox">
+                <div class="shedule">
+                    <p>Statistics</p>
+                    <a href="#">see more</a>
+                </div>
+                <div class="repetitionBox">
+                    <div class="repetition">
+                        <p>repetition</p>
+                        <a href="#">Week<span class="arrow-icon">▼</span></a>
+                    </div>
+                    <div class="day">
+                        <div class="DayN">
+                            <p>Sun</p>
+                            <i class="fi fi-rr-pencil"></i>
+                            <p>8.12</p>
+                            <p>writing</p>
+                        </div>
+                        <div class="DayN">
+                            <p>Sun</p>
+                            <i class="fi fi-rr-headphones"></i>
+                            <p>9.12</p>
+                            <p>listening</p>
+                        </div>
+                        <div class="DayN">
+                            <p>Sun</p>
+                            <i class="fi fi-rr-pencil"></i>
+                            <p>10.12</p>
+                            <p>writing</p>
+                        </div>
+                        <div class="DayN">
+                            <p>Sun</p>
+                            <i class="fi fi-rr-microphone"></i>
+                            <p>11.12</p>
+                            <p>speaking</p>
+                        </div>
+                        <div class="DayN">
+                            <p>Sun</p>
+                            <i class="fi fi-rr-cross"></i>
+                            <p>12.12</p>
+
+                        </div>
+                        <div class="DayN">
+                            <p>Sun</p>
+                            <i class="fi fi-rr-cross"></i>
+                            <p>13.12</p>
+                        </div>
+                        <div class="DayN">
+                            <p>Sun</p>
+                            <i class="fi fi-rr-cross"></i>
+                            <p>14.12</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="shedule">
+                    <p>Schedule</p>
+                    <a href="#">see more</a>
+                </div>
+                <div class="LineChart">
+                    <canvas id="myLineChart"></canvas>
+                </div>
+            </div>
         </div>
         <div class="box3">
-<div class="text">
-
-    <p>створюй свої картки<br> для кращого вивчення мови</p>
-
-</div>
-            <a href="#">Почнімо!</a>
-
+            <div class="text">
+                <p>create your own cards<br>for better language learning</p>
+            </div>
+            <a href="#">Get started →</a>
         </div>
         <div class="box4">
-<div>📚study</div>
-<img src="/photo/фоточка.jpg" alt="">
-<img src="/photo/фоточка.jpg" alt="">
-<img src="/photo/фоточка.jpg" alt="">
-<img src="/photo/фоточка.jpg" alt="">   
+            <div class="infoAndLink">
+                <p>📚study</p>
+                <a href="#">see more</a>
+            </div>
+            <a href="#"><img src="/photo/listening.png" alt=""></a>
+            <a href="#"><img src="/photo/reading.png" alt=""></a>
+            <a href="#"><img src="/photo/speaking.png" alt=""></a>
+            <a href="#"><img src="/photo/writing.png" alt=""></a>
         </div>
-
-        <div class="box5">Four</div>
-
-        
+        <div class="box5">
+            <div class="infoAndLink">
+                <p>📰news</p>
+                <a href="#">see more</a>
+            </div>
+            <div class="News">
+                <div class="newsItem">
+                    <img src="https://www.notion.so/image/https%3A%2F%2Fcdn.leonardo.ai%2Fusers%2F8486cb53-a087-42ee-b0e4-7ab0b40cf457%2Fgenerations%2Fa4333cde-582e-4c0d-b244-5667559548c8%2FDreamShaper_v7_Overwatch_Zenyatta_meditation_0.jpg?table=block&id=784a62af-1cb6-414d-8688-f251d4fb8f02&spaceId=2681b2d6-1e4b-4461-a437-39ca21122011&width=2000&userId=68e17783-6caf-466a-88ad-c7ceaec594ab&cache=v2"
+                        alt="">
+                    <p>Додано штучний інтелект для автоматичного створення слів у визначеному контексті, перевірки
+                        правопису та надання корисних порад. Це сприяє поліпшенню якості вивчення, роблячи процес більш
+                        ефективним і захопливим. Тепер користувачі можуть отримувати індивідуалізовану підтримку та
+                        вдосконалювати свої навички англійської мови, користуючись передовими технологіями штучного
+                        інтелекту.
+                    </p>
+                </div>
+                <div class="newsItem">
+                    <img src="https://www.notion.so/image/https%3A%2F%2Fcdn.leonardo.ai%2Fusers%2F8486cb53-a087-42ee-b0e4-7ab0b40cf457%2Fgenerations%2F3f9bb1b1-f687-4d42-a6d2-8bdec3e636ac%2FDefault_art_brush_pixelart_0.jpg?table=block&id=be1b1f6f-c79c-44bf-a30d-ad2718604c5e&spaceId=2681b2d6-1e4b-4461-a437-39ca21122011&width=2000&userId=68e17783-6caf-466a-88ad-c7ceaec594ab&cache=v2"
+                        alt="">
+                    <p>Додано дошку для зборів або зустрічей, особливо у великих групах або організаціях, де люди
+                        об'єднуються для спільних заходів, обміну ідеями, навчання та взаємодіями.</p>
+                </div>
+                <div class="newsItem">
+                    <img src="https://www.notion.so/image/https%3A%2F%2Fcdn.leonardo.ai%2Fusers%2F8486cb53-a087-42ee-b0e4-7ab0b40cf457%2Fgenerations%2F45c51fbc-88a6-4bdd-8992-d2ee42539c27%2F3D_Animation_Style_book_poverfiremagic_0.jpg?table=block&id=778bca06-a81c-473e-8da7-8da8782a7008&spaceId=2681b2d6-1e4b-4461-a437-39ca21122011&width=2000&userId=68e17783-6caf-466a-88ad-c7ceaec594ab&cache=v2"
+                        alt="">
+                    <p>Додано нові досягнення✨✨✨</p>
+                </div>
+            </div>
+        </div>
     </div>
+    <script src="/diagram.js"></script>
 </body>
 
 </html>
